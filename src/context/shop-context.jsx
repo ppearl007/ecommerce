@@ -22,9 +22,13 @@ const ShopContextProvider = ({ children }) => {
         setCartItems(prevState => ({...prevState, [itemId]: prevState[itemId]-1}))
     }
 
-    const contextValue = {cartItems, addToCart, removeFromCart}
+    const updateCart = (event, itemId) => {
+        const qty = Number(event.target.value)
+        setCartItems(prevState => ({...prevState, [itemId]: qty}))
+    }
+
+    const contextValue = {cartItems, addToCart, removeFromCart, updateCart}
     
-    // console.log(cartItems)
     return (
         <ShopContext.Provider value={contextValue}>
             {children}

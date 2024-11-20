@@ -9,7 +9,7 @@ const Cart = () => {
 
   const addedProducts = PRODUCTS.map(product => {
     if (cartItems[product.id] > 0) {
-      console.log(cartItems[product.id])
+      // console.log(cartItems[product.id])
       return <CartItem key={product.id} {...product} />
     }
   }
