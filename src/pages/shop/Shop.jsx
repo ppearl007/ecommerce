@@ -2,8 +2,10 @@ import React from 'react'
 import { PRODUCTS } from '../../data/products'
 import Product from '../../components/Product'
 import './shop.css'
+import { useNavigate } from 'react-router-dom'
 
 const Shop = () => {
+    const navigate = useNavigate()
     const allProducts = PRODUCTS.map(product =>
         <Product key={product.id} {...product} />
     )
@@ -17,6 +19,9 @@ const Shop = () => {
                 {allProducts}
             </div>
 
+            <div className='button-wrapper'>
+                <button onClick={() => navigate('/cart')}> View Cart </button>
+            </div>
         </div>
     )
 }

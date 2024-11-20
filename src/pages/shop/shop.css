@@ -15,7 +15,7 @@
 .product {
     width: 400px;
     height: 350px;
-    margin: 50px 25px;
+    margin: 100px 25px;
     padding: 2rem;
 }
   
@@ -28,4 +28,10 @@
     gap: 10px;
     text-align: center;
     font-weight: bold;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 50px ;
+    font-size: large;
 }
