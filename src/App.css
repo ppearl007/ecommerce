@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100vw;
+  height: 4em;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.links {
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,31 @@
+.shopTitle {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.product {
+    width: 400px;
+    height: 350px;
+    margin: 50px 25px;
+    padding: 2rem;
+}
+  
+.product-image {
+    width: 400px;
+}
+  
+.description {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    font-weight: bold;
+}
